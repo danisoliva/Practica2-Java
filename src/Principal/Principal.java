@@ -21,7 +21,7 @@ public class Principal {
               double b = Double.parseDouble(txtNum2.getText());
 
               double c = a / b;
-
+              JOptionPane.showMessageDialog(null,"El valor de la division es: "+c);
             }
         });
         btnMultiplicacion.addActionListener(new ActionListener() {
@@ -30,6 +30,7 @@ public class Principal {
                 double a = Double.parseDouble(txtNum1.getText());
                 double b = Double.parseDouble(txtNum2.getText());
                 double c = a * b;
+                JOptionPane.showMessageDialog(null,"El valor de la multiplicacion es: "+c);
             }
         });
         btnResta.addActionListener(new ActionListener() {
@@ -39,6 +40,8 @@ public class Principal {
                 double b = Double.parseDouble(txtNum2.getText());
 
                 double c = a-b;
+                JOptionPane.showMessageDialog(null,"El valor de la resta es: "+c);
+
             }
         });
         btnSuma.addActionListener(new ActionListener() {
@@ -47,7 +50,18 @@ public class Principal {
                 double a = Double.parseDouble(txtNum1.getText());
                 double b = Double.parseDouble(txtNum2.getText());
                 double c = a + b;
+                JOptionPane.showMessageDialog(null,"El valor de la suma es: "+c);
             }
         });
     }
+
+    public class Main {
+        public static void main(String[] args) {
+              Principal principal = new Principal();
+
+
+        }
+    }
+
+
 }
